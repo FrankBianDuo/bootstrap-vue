@@ -338,8 +338,8 @@ export const BModal = /*#__PURE__*/ Vue.extend({
     modalStyles() {
       const sbWidth = `${this.scrollbarWidth}px`
       return {
-        paddingLeft: !this.isBodyOverflowing && this.isModalOverflowing ? sbWidth : '',
-        paddingRight: this.isBodyOverflowing && !this.isModalOverflowing ? sbWidth : '',
+//          paddingLeft: !this.isBodyOverflowing && this.isModalOverflowing ? sbWidth : '',
+//         paddingRight: this.isBodyOverflowing && !this.isModalOverflowing ? sbWidth : '',
         // Needed to fix issue https://github.com/bootstrap-vue/bootstrap-vue/issues/3457
         // Even though we are using v-show, we must ensure 'none' is restored in the styles
         display: this.isBlock ? 'block' : 'none'
